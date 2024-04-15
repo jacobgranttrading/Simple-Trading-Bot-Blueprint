@@ -36,7 +36,8 @@ Follow the instructions below to set up the automated trading bot for each metho
 2. Connect to the instance and install Python, a Python IDE, and the MetaTrader5 platform.
 3. Install the required Python libraries: `pip install MetaTrader5 polygon-api`.
 4. Download the Python script that fetches data from Polygon, analyzes it, and executes trades on MetaTrader5.
-5. Run the Python script to start the automated trading bot.
+5. Run the Python script to test it and make sure it pulls data and executes trades.
+6. Use Task Scheduler to trigger the python script daily.
 
 ### 2. TradingView - Lambda - Alpaca
 
@@ -47,10 +48,13 @@ Follow the instructions below to set up the automated trading bot for each metho
 
 ### 3. Pinescript on TradingView
 
-1. Create a trading strategy using Pine Script in the TradingView platform.
-2. Backtest and optimize your strategy using historical data.
-3. Connect your TradingView account to a broker that supports your strategy.
-4. Activate your strategy for live trading and monitor its performance.
+1. Open Pine Script Editor: In your TradingView account, open the Pine Script editor.
+2. Create a New Script: Create a new script and paste the sample Pine Script provided above.
+3. Customize the Script: You can customize the script to suit your trading preferences. For example, you can adjust the periods of the moving averages or change the strategy.
+4. Backtest and Optimize: Test your strategy using historical data and make adjustments to improve performance.
+5. Connect to Broker: Make sure your TradingView account is linked with a broker that supports your strategy and that auto-trading is enabled.
+6. Activate Strategy: Once you are satisfied with your strategy and have thoroughly tested it, activate it for live trading.
+7. Monitor the Strategy: Regularly monitor the strategy and make any necessary adjustments to keep it running smoothly.
 
 
 ## Usage
