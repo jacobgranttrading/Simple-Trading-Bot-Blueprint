@@ -1,0 +1,29 @@
+//@version=5
+strategy("SMA Crossover Strategy", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=5)
+
+// Define input parameters for moving averages
+shortMA = input.int(9, title="Short Moving Average Period")
+longMA = input.int(21, title="Long Moving Average Period")
+
+// Calculate the moving averages
+shortSMA = ta.sma(close, shortMA)
+longSMA = ta.sma(close, longMA)
+
+// Plot the moving averages on the chart
+plot(shortSMA, title="Short SMA", color=color.blue)
+plot(longSMA, title="Long SMA", color=color.red)
+
+// Define buy and sell conditions
+buyCondition = ta.crossover(shortSMA, longSMA) // Short SMA crosses above Long SMA
+sellCondition = ta.crossunder(shortSMA, longSMA) // Short SMA crosses below Long SMA
+
+// Execute trades based on buy and sell conditions
+if (buyCondition)
+    strategy.entry("Buy", strategy.long) // Enter long position
+
+if (sellCondition)
+    strategy.close("Buy") // Close long position
+
+// Display strategy entry and exit points on the chart
+plotshape(series=buyCondition, title="Buy Signal", location=location.belowbar, color=color.green, style=shape.triangleup, size=size.small)
+plotshape(series=sellCondition, title="Sell Signal", location=location.abovebar, color=color.red, style=shape.triangledown, size=size.small)
