@@ -52,6 +52,23 @@ Follow the instructions below to set up the automated trading bot for each metho
 3. Connect your TradingView account to a broker that supports your strategy.
 4. Activate your strategy for live trading and monitor its performance.
 
+
+How to Use This Script:
+Open Pine Script Editor: In your TradingView account, open the Pine Script editor.
+
+Create a New Script: Create a new script and paste the sample Pine Script provided above.
+
+Customize the Script: You can customize the script to suit your trading preferences. For example, you can adjust the periods of the moving averages or change the strategy.
+
+Backtest and Optimize: Test your strategy using historical data and make adjustments to improve performance.
+
+Connect to Broker: Make sure your TradingView account is linked with a broker that supports your strategy and that auto-trading is enabled.
+
+Activate Strategy: Once you are satisfied with your strategy and have thoroughly tested it, activate it for live trading.
+
+Monitor the Strategy: Regularly monitor the strategy and make any necessary adjustments to keep it running smoothly.
+
+
 ## Usage
 
 After completing the installation steps for your chosen method, your automated trading bot will be up and running. Monitor the bot's performance and make adjustments as necessary based on market conditions and trading results.
